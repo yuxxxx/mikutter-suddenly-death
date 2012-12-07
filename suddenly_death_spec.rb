@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 require 'rspec'
-require './suddenly_death.rb'
+require './suddenly_death_module.rb'
 
 class WrapTest
   include SuddenlyDeath
