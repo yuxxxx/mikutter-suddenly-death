@@ -6,7 +6,7 @@ Plugin.create(:suddenly_death) do
          name: '突然の死',
          condition: Plugin::Command[:Editable],
          visible: false,
-         icon: MUI:Skin.get("post.png"),
+         icon: MUI::Skin.get("post.png"),
          role: :postbox) do |opt|
     opt.widget.buffer.text = SuddenlyDeath.wrap(opt.widget.buffer.text)
   end
