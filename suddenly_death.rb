@@ -8,6 +8,6 @@ Plugin.create(:suddenly_death) do
          visible: false,
          icon: MUI:Skin.get("post.png"),
          role: :postbox) do |opt|
-    opt.buffer.text = SuddenlyDeath.wrap opt.buffer.text
+    opt.widget.buffer.text = SuddenlyDeath.wrap(opt.widget.buffer.text)
   end
 end
